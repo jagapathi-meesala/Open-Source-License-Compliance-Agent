@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: open-source-license-compliance-agent
+version: "1.0.0"
+description: Reviews supplied dependency and license evidence to flag obligations for human review.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - license-inventory
+  - obligation-review
+  - compliance-reporting
+tools:
+  - analyze-license-inventory
+  - review-license-obligations
+  - generate-compliance-report
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - open-source
+  - licensing
+  - compliance

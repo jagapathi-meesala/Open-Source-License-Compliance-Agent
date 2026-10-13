@@ -1,0 +1,9 @@
+name: review-license-obligations
+description: Generate conditional license-obligation questions from supplied evidence.
+input_schema:
+  type: object
+  properties:
+    license_id: {type: string}
+    distribution_context: {type: string}
+    evidence: {type: string}
+  required: [license_id]

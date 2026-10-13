@@ -1,0 +1,9 @@
+name: generate-compliance-report
+description: Draft an evidence-linked compliance report with unresolved questions.
+input_schema:
+  type: object
+  properties:
+    inventory_summary: {type: string}
+    findings: {type: string}
+    distribution_context: {type: string}
+  required: [inventory_summary]

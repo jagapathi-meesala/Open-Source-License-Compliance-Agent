@@ -1,0 +1,16 @@
+name: analyze-license-inventory
+description: Review supplied dependency inventory fields and flag missing license evidence.
+input_schema:
+  type: object
+  properties:
+    rows:
+      type: array
+      items:
+        type: object
+        properties:
+          package: {type: string}
+          version: {type: string}
+          license_id: {type: string}
+          evidence: {type: string}
+        required: [package]
+  required: [rows]
